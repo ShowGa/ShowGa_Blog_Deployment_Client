@@ -1,0 +1,537 @@
+/*
+==================
+page global
+==================
+*/
+.p-row_flex_between {
+  @apply flex justify-between;
+}
+
+/*
+==================
+react-quill
+==================
+*/
+.ql-editor.ql-blank::before {
+  @apply text-lg opacity-60;
+  color: var(--softTextColor);
+}
+.ql-bubble .ql-editor p {
+  @apply text-lg;
+}
+.ql-bubble .ql-editor h1 {
+  @apply text-4xl;
+}
+.ql-bubble .ql-editor h2 {
+  @apply text-[1.625rem];
+}
+.ql-bubble .ql-editor ul {
+  @apply text-lg;
+}
+.ql-bubble .ql-editor ol {
+  @apply text-lg;
+}
+.ql-bubble .ql-editor a {
+  white-space: wrap !important;
+}
+.ql-bubble .ql-editor img {
+  @apply max-w-md mx-auto;
+}
+.ql-bubble .ql-editor p:has(img) {
+  @apply text-center;
+}
+.ql-syntax {
+  background-color: #dddddd;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  color: black;
+}
+
+/*
+==================
+Swiper
+==================
+*/
+.swiper-slide {
+  width: max-content;
+}
+
+.swiper-slide div {
+  @apply w-[320px] h-[400px] overflow-hidden;
+  @apply max-md:w-[280px] max-md:h-[350px] max-sm:w-[240px] max-sm:h-[300px];
+}
+
+.swiper-slide img {
+  @apply w-full h-full object-cover object-center rounded-lg;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  border-radius: 0.5rem;
+}
+
+/*
+==================
+Home.jsx
+==================
+*/
+.p-heroSec_intro_head_container {
+  @apply flex flex-col gap-2 py-11;
+}
+
+.p-heroSec_intro_head_container h1 {
+  @apply text-5xl font-extrabold;
+  @apply max-md:text-3xl;
+}
+
+.p-heroSec_intro_head_container p {
+  @apply text-2xl;
+  @apply max-md:text-lg;
+}
+
+.p-swiper_container {
+  margin: auto;
+}
+
+.p-heroSec_intro_body_container {
+  @apply flex items-center justify-center gap-5;
+  @apply max-md:flex-col;
+}
+
+.p-heroSec_intro_body_text_container {
+  @apply flex flex-col gap-4 max-w-[600px];
+}
+
+.p-heroSec_intro_body_text_container h1 {
+  @apply text-3xl font-extrabold;
+}
+
+.p-heroSec_intro_body_text_container p {
+  color: var(--softTextColor);
+}
+
+.p-tagSec {
+  @apply mt-11;
+}
+
+.p-tagSec h1 {
+  @apply font-bold text-2xl;
+}
+
+.p-tagSec_tags_container {
+  @apply flex flex-wrap gap-2 justify-between mt-4;
+}
+
+.p-post-sidebarSec {
+  @apply mt-11;
+}
+
+.p-post-sidebarSec_container {
+  @apply flex gap-10;
+}
+
+.p-post_main_title {
+  @apply font-bold text-2xl;
+}
+
+.p-post-main_postcards_container {
+  @apply flex flex-col gap-8 mt-4;
+}
+
+/*
+==================
+Search.jsx
+==================
+*/
+
+.p-search_section_container {
+  @apply border-b-2 border-red-400;
+}
+
+.p-search_section_container h1 {
+  @apply text-2xl font-bold;
+}
+
+.p-search_section_system_form {
+  @apply flex flex-col gap-5 p-4;
+}
+
+.p-search_section_system_form label {
+  @apply text-xl font-bold;
+}
+
+.p-search_form_Term {
+  @apply flex items-center gap-3;
+}
+
+.p-search_form_Term input {
+  @apply border-2 border-gray-500 rounded-md p-1 text-black;
+}
+
+.p-search_form_tag {
+  @apply flex flex-col gap-3;
+}
+
+.p-tag_span_container {
+  @apply flex flex-row flex-wrap gap-2;
+}
+
+.p-span_item {
+  @apply text-gray-800 font-bold rounded-full p-2;
+  @apply transition-all duration-150 cursor-pointer;
+}
+
+.p-search_form_sort {
+  @apply flex items-center gap-3;
+}
+
+.p-search_form_sort select {
+  @apply border-2 border-gray-500 rounded-md p-1 text-black;
+}
+
+.p-search_form_featured {
+  @apply flex items-center gap-3;
+}
+.p-search_form_featured select {
+  @apply border-2 border-gray-500 rounded-md p-1 text-black;
+}
+
+.p-search_button {
+  @apply text-xl border-2 py-1 border-orange-400 w-[60%] m-auto;
+  @apply transition-all duration-100;
+  @apply hover:bg-orange-400 hover:text-gray-800;
+}
+
+.p-load_more_button {
+  @apply text-5xl m-auto cursor-pointer transition-all duration-150;
+  @apply hover:scale-110;
+}
+
+/*
+==================
+Post.jsx
+==================
+*/
+.p-post_page_heroSection_container {
+  @apply flex items-center gap-3 pt-11;
+  @apply max-lg:flex-col;
+}
+
+.p-post_title_container {
+  @apply flex flex-col flex-1 justify-center gap-10;
+  @apply max-lg:gap-3 max-lg:border-b max-lg:w-full;
+}
+
+.p-post_title_container h1 {
+  @apply text-4xl font-bold;
+  @apply max-md:text-3xl max-sm:text-2xl;
+}
+
+.p-author_container {
+  @apply flex items-center gap-6;
+}
+
+.p-author_container img {
+  @apply w-20 rounded-full;
+  @apply max-lg:w-14;
+}
+
+.p-author_text p {
+  @apply text-xl;
+  @apply max-lg:text-lg;
+}
+
+.p-author_text span {
+  color: var(--softTextColor);
+}
+
+.p-post_title_function-list {
+  @apply flex gap-6 items-center py-4;
+}
+
+.p-function_clap_container {
+  color: var(--softTextColor);
+  @apply flex gap-1 cursor-pointer;
+}
+
+.p-function_comments_container {
+  color: var(--softTextColor);
+  @apply flex gap-1 cursor-pointer;
+}
+
+.p-post_img_container {
+  @apply flex-1;
+}
+
+.p-post_comments_section {
+  @apply fixed w-[100vw] h-[100vh] z-50 top-0 left-0;
+  @apply opacity-0 pointer-events-none transition-all duration-150;
+  @apply max-sm:w-full;
+}
+
+.p-post_comments_container {
+  background-color: var(--bg);
+  @apply flex flex-col gap-5;
+  @apply fixed right-0 w-[26rem] h-full p-6;
+  @apply overflow-auto shadow-xl shadow-gray-500;
+  @apply max-sm:w-full max-sm:h-[90%] max-sm:bottom-0 max-sm:border;
+}
+
+.p-post_comments_container::-webkit-scrollbar {
+  display: none;
+}
+
+.p-textarea_container textarea {
+  @apply w-full h-[8rem] p-1 border-2 border-black rounded-md text-black;
+}
+.p-textarea_container textarea::-webkit-scrollbar {
+  display: none;
+}
+.p-textarea_container button {
+  @apply bg-green-600 p-2 rounded-full text-white text-sm;
+  @apply hover:bg-green-700;
+}
+
+.p-commentSec_select {
+  @apply bg-transparent font-bold text-xl cursor-pointer;
+}
+.p-commentSec_select option {
+  @apply text-black;
+}
+
+.p-plus-button_container {
+  @apply text-3xl text-center mt-6;
+}
+
+.p-comments_section-effect {
+  @apply opacity-100 pointer-events-auto;
+}
+
+.p-article_container {
+  @apply flex-1;
+}
+
+.p-article_container article {
+  @apply text-lg;
+}
+
+/*
+==================
+Login.jsx
+==================
+*/
+.p-login-page_wrapper {
+  @apply flex flex-col justify-center gap-5 min-h-[85vh] max-w-md m-auto;
+}
+
+.p-login-lock {
+  @apply flex justify-center items-center w-fit gap-2 border border-orange-400 px-2 py-1 mb-6 mx-auto;
+  @apply text-black rounded-md;
+}
+
+.p-login_title {
+  @apply text-4xl font-bold;
+}
+.p-login_title span {
+  @apply text-white text-center p-2 rounded-md;
+}
+.p-login_des {
+  @apply text-sm mt-5;
+}
+
+/*
+==================
+About.jsx
+==================
+*/
+.p-about_section_container {
+  @apply min-h-screen max-w-[80%]  m-auto py-12;
+}
+
+.p-about_section_container h1 {
+  @apply text-4xl font-bold;
+}
+
+.p-about_section_container p {
+  @apply text-lg pt-5;
+}
+
+.p-social-link_container {
+  @apply pt-5;
+}
+
+.p-social-link_container a {
+  @apply inline-block;
+}
+
+.p-social-link_container img {
+  @apply w-7 cursor-pointer;
+}
+
+/*
+==================
+Editor.jsx
+==================
+*/
+.p-editor_title_input {
+  @apply w-full p-1 mb-4 text-2xl bg-transparent;
+}
+.p-editor_banerImg_container {
+  @apply mb-6;
+}
+.p-editor_banerImg_container span {
+  @apply text-xl font-bold;
+}
+.p-select_container {
+  @apply flex flex-col gap-2 text-xl;
+}
+.p-select_container select {
+  @apply bg-transparent;
+}
+.p-select_container option {
+  @apply text-black;
+}
+.p-function_container {
+  @apply flex items-center gap-4 pl-3;
+}
+.p-plus_button {
+  @apply text-4xl;
+  @apply transition-all duration-500;
+}
+.p-rotate-effect {
+  @apply rotate-[135deg];
+}
+
+.p-btn_container {
+  @apply flex items-center gap-2;
+}
+
+.p-function_btn {
+  @apply border-2 p-1 rounded-full text-4xl;
+}
+
+.p-editor-publish_button {
+  @apply bg-green-500 p-2 rounded-full text-white;
+  @apply hover:bg-green-600;
+}
+/*for the post page*/
+.p-post {
+}
+.p-post p {
+  @apply mt-8 text-lg;
+}
+.p-post h1 {
+  @apply mt-9 text-4xl;
+}
+.p-post h2 {
+  @apply mt-5 text-[1.625rem];
+}
+.p-post ul {
+  @apply list-disc list-inside ml-10 mt-3 text-lg;
+}
+.p-post ol {
+  @apply list-decimal list-inside ml-10 mt-3 text-lg;
+}
+.p-post a {
+  text-decoration: underline;
+}
+.p-post img {
+  @apply max-w-md mx-auto mb-2;
+}
+.p-post p:has(img) {
+  @apply text-center text-sm;
+  color: var(--softTextColor);
+}
+
+.p-post h1 + p,
+.p-post h2 + p {
+  margin-top: 0;
+}
+.p-post > *:first-child {
+  margin-top: 0;
+}
+
+/*
+==================
+Profile.jsx
+==================
+*/
+.p-profile-page_wrapper {
+  @apply max-w-lg h-[90vh] mx-auto mt-11 p-3;
+}
+
+.p-profile-title {
+  @apply text-3xl font-bold text-center mb-10;
+}
+
+.p-profile-head_container {
+  @apply relative w-28 h-28 mx-auto;
+}
+.p-profile-head_container img {
+  @apply w-full h-full rounded-full border-2 border-gray-300 object-cover object-center cursor-pointer;
+}
+
+.p-profile-body_container {
+  @apply flex flex-col;
+}
+.p-profile-body_container label {
+  @apply mt-5 text-xl;
+}
+.p-profile-body_container input {
+  background-color: var(--softBg);
+  @apply border border-gray-300 rounded-md p-2;
+}
+.p-profile-body_container input#email {
+  @apply disabled:cursor-not-allowed;
+}
+.p-profile-body_container button {
+  border-color: rgb(248, 96, 121);
+  @apply w-full mx-auto mt-7 p-1 border-2 text-lg;
+}
+.p-profile-body_container button:hover {
+  background: linear-gradient(135deg, rgb(231, 70, 148), rgb(255, 139, 76));
+}
+
+.p-profile-function_button_container {
+  @apply text-red-600 mt-7;
+}
+.p-profile-function_button_container span {
+  @apply hover:underline cursor-pointer;
+}
+
+/*
+==================
+Profile.jsx
+==================
+*/
+.p-dashboard-wrapper {
+  @apply flex min-h-screen;
+}
+
+.p-dashboard-sidebar_sec {
+  background: var(--softBg);
+  @apply flex flex-col gap-2 min-h-full p-3;
+}
+
+.p-sidebar-items {
+  @apply flex items-center gap-2 p-1 rounded-md cursor-pointer;
+  @apply hover:bg-gray-500 hover:bg-opacity-30;
+  /* @apply; */
+}
+.p-sidebar-items * {
+  @apply pointer-events-none;
+}
+
+.p-items_active {
+  @apply bg-gray-500 bg-opacity-30;
+}
+
+/*
+==================
+About.jsx
+==================
+*/
+.p-about-content h2 {
+  @apply text-2xl font-bold mt-8 border-b;
+}

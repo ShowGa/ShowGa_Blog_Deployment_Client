@@ -1,0 +1,346 @@
+/*
+==================
+Global - Components
+==================
+*/
+.c-img_hover-effect {
+  transition: transform 300ms;
+}
+
+.c-tag_text-color {
+  @apply text-gray-800 font-bold;
+}
+
+/*
+==================
+Header.jsx
+==================
+*/
+.c-header_container {
+  @apply relative flex justify-between items-center px-6 h-16;
+}
+
+.c-header_container_effect {
+  box-shadow: inset 0px 1px 3px 0px rgb(198, 198, 198);
+}
+
+.c-header_logo_container {
+  @apply flex items-center h-full;
+}
+
+.c-header_logo_container p {
+  @apply max-sm:hidden;
+}
+
+.c-nav_container {
+  @apply flex items-center h-full;
+}
+
+.c-nav_list {
+  @apply flex gap-3 items-center;
+  @apply max-md:hidden;
+}
+
+.c-nav_icons_container {
+  @apply h-full flex items-center pl-3;
+}
+
+.c-nav_icons {
+  @apply text-3xl cursor-pointer transition-all duration-200;
+}
+
+.c-nav_icon_burger {
+  @apply hidden;
+  @apply max-md:block;
+}
+
+.c-nav-profile-dropdown {
+  opacity: 0;
+  min-width: 14rem;
+  min-height: max-content;
+  right: 0;
+  top: 64px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+  pointer-events: none;
+
+  position: absolute;
+  z-index: 40;
+
+  transition: all;
+  transition-duration: 200ms;
+  /* @apply w; */
+}
+.c-nav-profile-dropdown_on {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c-dropdown-list_container {
+  @apply border-b border-gray-700 pb-2 mb-2;
+}
+
+/*
+==================
+ThemeButton.jsx
+==================
+*/
+.c-switch_container {
+  width: 50px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.c-switch_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 0.5s ease-in;
+}
+
+.c-switch_background_light {
+  background-image: url("../assets/day.jpg");
+  opacity: 1;
+}
+
+.c-switch_background_dark {
+  background-image: url("../assets/night.jpg");
+  opacity: 0;
+}
+
+.c-switch_background_dark_on {
+  opacity: 1;
+}
+
+.c-ball {
+  z-index: 10;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  font-size: 21px;
+  margin-left: 3px;
+  transition: all 0.5s;
+  color: rgb(255, 242, 0);
+}
+
+.c-ball_effect {
+  transform: translate(24px, 0);
+  color: gold;
+}
+
+/*
+==================
+PostCard.jsx
+==================
+*/
+.c-postcard_container {
+  @apply flex items-center gap-6 pb-3 border-b cursor-pointer;
+}
+
+.c-postcard_container:hover .c-img_hover-effect {
+  transform: scale(1.1, 1.1);
+}
+
+.c-postcard_img_container {
+  @apply flex-shrink-0 w-[250px] h-[250px] overflow-hidden;
+  @apply max-md:w-[180px] max-md:h-[180px] max-sm:w-[130px] max-sm:h-[130px];
+}
+
+.c-postcard_img_container img {
+  @apply w-full h-full object-cover;
+}
+
+.c-postcard_text_container {
+  @apply flex flex-col items-start gap-5;
+}
+
+.c-postcard_text_container p {
+  color: var(--softTextColor);
+}
+
+.c-postcard_text_container span {
+  @apply ml-1 text-xs rounded-full p-1;
+}
+
+/*
+==================
+SideBarPostCard.jsx
+==================
+*/
+.c-sideBarPostCard_container {
+  @apply flex items-center gap-3 cursor-pointer;
+}
+
+.c-sideBarPostCard_container:hover .c-img_hover-effect {
+  transform: scale(1.1, 1.1);
+}
+
+.c-sideBarPostCard_img_container {
+  @apply w-12 h-12 flex-shrink-0;
+}
+
+.c-sideBarPostCard_img_container img {
+  @apply w-full h-full border-2 border-gray-400 rounded-full object-cover object-center;
+}
+
+.c-sideBarPostCard_text_container {
+  @apply flex flex-col items-start gap-2;
+}
+
+.c-sideBarPostCard_text_container span {
+  @apply px-2 py-[2px] rounded-full text-[10px];
+}
+
+.c-sideBarPostCard_text_container p {
+  color: var(--softTextColor);
+}
+
+/*
+==================
+Tag.jsx
+==================
+*/
+.c-tag_container {
+  @apply flex justify-center items-center gap-2 w-[160px] h-[65px] px-5 rounded-lg cursor-pointer;
+
+  @apply max-sm:h-[3.25rem] max-sm:w-full;
+}
+
+.c-tag_container img {
+  @apply w-full h-full rounded-full object-cover;
+}
+
+.c-tag_container p {
+  /* color: var(--softTextColor); */
+}
+
+/*
+==================
+SideBarTag.jsx
+==================
+*/
+.c-sideBarTag_container {
+  @apply flex justify-center items-center px-5 py-2 rounded-lg cursor-pointer bg-opacity-50 text-sm;
+}
+
+/*
+==================
+RecommendSideBar.jsx
+==================
+*/
+.c-recommendSideBar_wrapper {
+  @apply w-[300px] flex flex-col gap-11;
+}
+
+.c-recommendSideBar_topic_container {
+  @apply flex flex-col gap-6;
+}
+
+.c-recommendSideBar_post-container {
+  @apply flex flex-col gap-6;
+}
+
+.c-recommendSideBar_text_container p {
+  @apply text-xs;
+}
+
+.c-recommendSideBar_text_container h1 {
+  @apply text-2xl font-bold;
+}
+
+/*
+==================
+CommentCard.jsx
+==================
+*/
+.c-comment-card_container {
+  @apply flex flex-col gap-4 border-t pt-4 mt-5;
+}
+
+.c-comment-card_author_container {
+  @apply flex items-center gap-3;
+}
+
+.c-comment-card_author_container img {
+  @apply w-9 rounded-full;
+}
+
+.c-comment-card_author_container div span {
+  color: var(--softTextColor);
+  @apply text-sm leading-none;
+}
+
+.c-comment-card_function {
+  @apply flex gap-1 cursor-pointer;
+}
+
+/*
+==================
+OAuth.jsx
+==================
+*/
+.login_button {
+  @apply flex justify-center items-center gap-1 text-center h-12 mt-3 rounded-full cursor-pointer bg-gray-200;
+}
+
+.login_button img {
+  @apply w-8;
+}
+
+/*
+==================
+Modal.jsx
+==================
+*/
+.c-delete-modal_wrapper {
+  @apply fixed text-black bg-black bg-opacity-60 top-0 left-0 right-0 bottom-0 z-50 flex justify-center items-center p-5;
+}
+.c-delete-modal_wrapper button {
+  @apply border border-red-600 p-1 text-gray-500 mt-8 hover:text-white hover:bg-red-600 transition-all duration-300 disabled:cursor-not-allowed;
+}
+
+.c-delete-modal_container {
+  @apply max-w-lg bg-white rounded-xl p-10 flex flex-col relative justify-evenly;
+}
+.c-delete-modal_container span {
+  @apply absolute right-3 top-2 text-2xl font-extrabold text-red-600 cursor-pointer;
+}
+
+.c-delete-confirmation {
+  @apply mt-8;
+}
+.c-delete-confirmation input {
+  @apply w-full bg-gray-100 rounded-sm p-1;
+}
+
+/*
+==================
+components.jsx
+==================
+*/
+.c-dash-search_form {
+  @apply flex flex-col gap-4;
+}
+.c-dash-search_form div {
+  @apply flex flex gap-2 items-center;
+}
+.c-dash-search_form label {
+  @apply text-3xl;
+}
+.c-dash-search_form input {
+  @apply px-2 rounded-md border-2 border-gray-400 text-black;
+}
+.c-dash-search_form button {
+  @apply w-fit mx-auto border border-gray-500 p-2 rounded-full;
+}
