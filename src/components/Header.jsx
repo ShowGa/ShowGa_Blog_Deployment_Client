@@ -98,7 +98,7 @@ const Header = ({ changeLanguage }) => {
       <div className="c-header_container  c-header_container_effect">
         {/* ======== Logo section ======== */}
 
-        <Link className="c-header_logo_container">
+        <Link to={"/"} className="c-header_logo_container">
           <img
             src={theme === "light" ? showGaB : showGaW}
             alt="ShowGa Logo"
