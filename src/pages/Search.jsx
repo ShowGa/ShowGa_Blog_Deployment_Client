@@ -140,7 +140,7 @@ const Search = () => {
   }, [location.search]);
 
   return (
-    <div className="max-w-[80%] mx-auto max-md:max-w-[95%]">
+    <div className="min-h-screen max-w-[80%] mx-auto max-md:max-w-[95%]">
       {/* Hero section */}
       <section>
         <div className="p-heroSec_intro_head_container">

@@ -98,7 +98,7 @@ const Header = ({ changeLanguage }) => {
       <div className="c-header_container  c-header_container_effect">
         {/* ======== Logo section ======== */}
 
-        <div className="c-header_logo_container">
+        <Link className="c-header_logo_container">
           <img
             src={theme === "light" ? showGaB : showGaW}
             alt="ShowGa Logo"
@@ -107,7 +107,7 @@ const Header = ({ changeLanguage }) => {
           <p className="text-xl font-bold">
             <span className="red_blue_LG">ShowGa's </span>Blog
           </p>
-        </div>
+        </Link>
 
         {/* ======== Nav section ======== */}
 

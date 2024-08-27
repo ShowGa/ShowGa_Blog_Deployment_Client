@@ -17,7 +17,7 @@ import {
   EffectFade,
 } from "swiper/modules";
 // images
-import { me1 } from "../assets";
+import { me } from "../assets";
 import { tagInfo } from "../constants";
 // CSS
 import "./pages.css";
@@ -75,21 +75,15 @@ const Home = () => {
             }}
             // loop={true}
           >
-            <SwiperSlide>
-              <div>
-                <img src={me1} />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img src={me1} />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img src={me1} />
-              </div>
-            </SwiperSlide>
+            {me.map((mePic) => {
+              return (
+                <SwiperSlide>
+                  <div>
+                    <img src={mePic} />
+                  </div>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </section>
