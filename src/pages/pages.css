@@ -322,7 +322,7 @@ Login.jsx
 ==================
 */
 .p-login-page_wrapper {
-  @apply flex flex-col justify-center gap-5 min-h-[85vh] max-w-md m-auto;
+  @apply flex flex-col justify-center gap-5 min-h-screen max-w-md m-auto;
 }
 
 .p-login-lock {
