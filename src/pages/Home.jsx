@@ -68,8 +68,9 @@ const Home = () => {
             centeredSlides={true}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             coverflowEffect={{
+              slideShadows: false,
               rotate: 0,
-              stretch: 0,
+              stretch: 50,
               depth: 100,
               modifier: 2.5,
             }}
