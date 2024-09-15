@@ -241,7 +241,7 @@ const Search = () => {
 
               {searchPosts && searchPosts.length === 0 && (
                 <div>
-                  <p>Sadly, there no result</p>
+                  <p>Sadly, there's no result</p>
                 </div>
               )}
             </div>
